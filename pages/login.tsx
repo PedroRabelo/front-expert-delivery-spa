@@ -19,7 +19,7 @@ const Login: NextPage = () => {
         <div className="lg:basis-8/12 flex">
           <div className="max-w-2xl w-4/5 m-auto">
             <h1 className="font-bold text-4xl mb-3">Bem vindo</h1>
-            <p className="text-slate-700 mb-14">
+            <p className="mb-14">
               Autentique-se para continuar usando o serviço
             </p>
             <InputText
@@ -32,7 +32,7 @@ const Login: NextPage = () => {
               label="Senha"
               placeholder="Informe sua senha"
             />
-            <Button className="bg-indigo-200 w-full p-4 text-xl text-indigo-600">
+            <Button className="bg-indigo-200 text-xl text-indigo-600">
               Login
             </Button>
             <div className="block text-center p-6">

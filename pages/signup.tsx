@@ -19,7 +19,7 @@ const Signup: NextPage = () => {
         <div className="lg:basis-8/12 flex">
           <div className="max-w-2xl w-4/5 m-auto">
             <h1 className="font-bold text-4xl mb-3">Criar uma conta</h1>
-            <p className="text-slate-700 mb-14">
+            <p className="mb-14">
               Por favor, cria uma conta para continuar utilizando nosso serviço
             </p>
             <InputText
@@ -41,7 +41,7 @@ const Signup: NextPage = () => {
               Criar conta
             </Button>
 
-            <p className="mt-6 text-center text-slate-700 mb-14">
+            <p className="mt-6 text-center mb-14">
               Você já tem uma conta?{" "}
               <Link href="/login">
                 <a className="mt-6 text-orange-600 font-bold hover:text-orange-900">
