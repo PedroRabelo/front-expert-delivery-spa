@@ -6,3 +6,4 @@ export * from "./sidebar";
 export * from "./navbar";
 export * from "./categories";
 export * from "./highlights";
+export * from "./category";
