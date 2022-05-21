@@ -1,7 +1,18 @@
+import Styles from "./styles.module.css";
+
 export const Navbar = () => {
   return (
-    <div className="bg-gray-500">
-      <p className="text-gray-100">Navbar</p>
+    <div className={Styles.navbar}>
+      <div className="flex items-center">
+        <div>San Francisco, CA</div>
+        <div>Retirar</div>
+        <div>Ofertas</div>
+      </div>
+      <input className={Styles.inputSearch} placeholder="Pesquise aqui" />
+      <div>
+        <button>FIL</button>
+        <button>CKT</button>
+      </div>
     </div>
   );
 };

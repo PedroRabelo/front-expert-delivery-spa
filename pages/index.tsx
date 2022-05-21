@@ -12,9 +12,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="container bg-gray-300 h-60 m-auto">
+      <div className="container m-auto flex">
         <Sidebar />
-        <div>
+        <div className="grow p-8">
           <Navbar />
           <Categories />
           <Highlights />
