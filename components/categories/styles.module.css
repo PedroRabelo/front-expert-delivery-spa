@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.header h2 {
+  flex-grow: 1;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.header a {
+  display: flex;
+  align-items: center;
+  color: #5b4aa3;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+}
+
+.header svg {
+  margin-left: 8px;
+}
