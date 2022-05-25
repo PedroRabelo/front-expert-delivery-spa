@@ -4,8 +4,8 @@ export const IconWallet = (props: IconProps) => {
   const { color, size } = props;
   return (
     <svg
-      width={size || "24"}
-      height={size || "24"}
+      width={size || "48"}
+      height={size || "48"}
       viewBox="0 0 48 48"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

@@ -4,8 +4,8 @@ export const IconMotorcycle = (props: IconProps) => {
   const { color, size } = props;
   return (
     <svg
-      width={size || "16"}
-      height={size || "16"}
+      width={size || "32"}
+      height={size || "32"}
       viewBox="0 0 16 16"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
