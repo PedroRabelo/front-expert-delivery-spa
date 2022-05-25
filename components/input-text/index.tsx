@@ -1,4 +1,4 @@
-import { InputIcon } from "../input-icon";
+import { IconBase } from "../icon";
 import Styles from "./styles.module.css";
 
 type Props = {
@@ -12,7 +12,7 @@ export function InputText({ ...props }: Props) {
     <>
       <div className={Styles.container}>
         <div className={Styles.icon}>
-          <InputIcon size={24} color="#503E9D" />
+          <IconBase iconName="mail" color="#503E9D" />
         </div>
         <div className="grow">
           <label className={Styles.label}>{props.label}</label>

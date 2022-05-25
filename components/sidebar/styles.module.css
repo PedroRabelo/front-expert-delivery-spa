@@ -9,15 +9,20 @@
 }
 
 .header {
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 48px;
   padding-left: 32px;
   padding-right: 32px;
 }
 
-.header p {
+.header h3 {
   color: #000000;
-  @apply text-xl leading-6;
+  padding-left: 15px;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  font-weight: 700;
 }
 
 .menu {

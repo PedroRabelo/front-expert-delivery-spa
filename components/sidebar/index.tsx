@@ -1,19 +1,25 @@
+import Image from "next/image";
 import Link from "next/link";
+import { IconBase } from "../icon";
+import { UserProfile } from "../user-profile";
 import Styles from "./styles.module.css";
 
 export const Sidebar = () => {
   return (
     <div className={Styles.sidebar}>
       <div className={Styles.header}>
-        <p>
-          <span>icon</span>Delivery APP
-        </p>
+        <span>
+          <Image src="/logo.png" width={40} height={32} alt="Delivery App" />
+        </span>
+        <h3>Nibble</h3>
       </div>
       <ul className={Styles.menu}>
         <li className={Styles.active}>
           <Link href="/">
             <a>
-              <span>Icon</span>
+              <span>
+                <IconBase iconName="home" color="#A3A3A4" />
+              </span>
               Home
             </a>
           </Link>
@@ -21,7 +27,9 @@ export const Sidebar = () => {
         <li>
           <Link href="/explorar">
             <a>
-              <span>Icon</span>
+              <span>
+                <IconBase iconName="explorer" color="#A3A3A4" />
+              </span>
               Explorar
             </a>
           </Link>
@@ -29,7 +37,9 @@ export const Sidebar = () => {
         <li>
           <Link href="/favoritos">
             <a>
-              <span>Icon</span>
+              <span>
+                <IconBase iconName="bookmark" color="#A3A3A4" />
+              </span>
               Favoritos
             </a>
           </Link>
@@ -37,7 +47,10 @@ export const Sidebar = () => {
         <li>
           <Link href="/pedidos">
             <a>
-              <span>Icon</span>
+              <span>
+                {" "}
+                <IconBase iconName="document" color="#A3A3A4" />
+              </span>
               Pedidos
             </a>
           </Link>
@@ -45,7 +58,10 @@ export const Sidebar = () => {
         <li>
           <Link href="/mensagens">
             <a>
-              <span>Icon</span>
+              <span>
+                {" "}
+                <IconBase iconName="mail" color="#A3A3A4" />
+              </span>
               Mensagens
             </a>
           </Link>
@@ -53,14 +69,17 @@ export const Sidebar = () => {
         <li>
           <Link href="/conf">
             <a>
-              <span>Icon</span>
+              <span>
+                {" "}
+                <IconBase iconName="gear" color="#A3A3A4" />
+              </span>
               Configurações
             </a>
           </Link>
         </li>
       </ul>
       <div className={Styles.footer}>
-        <div>componente usuário</div>
+        <UserProfile />
       </div>
     </div>
   );

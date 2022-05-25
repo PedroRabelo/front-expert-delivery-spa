@@ -11,7 +11,7 @@ export const Categories = () => {
     {
       name: "Delivery",
       legend: "+1843 opções",
-      iconName: "bike",
+      iconName: "motorcycle",
     },
     {
       name: "Alta Classe",

@@ -1,4 +1,5 @@
 import Styles from "./styles.module.css";
+import { IconBase } from "../../components";
 
 type Props = {
   name: string;
@@ -9,7 +10,9 @@ type Props = {
 export const Category = ({ name, legend, iconName }: Props) => {
   return (
     <div className={Styles.card}>
-      <div>{iconName}</div>
+      <div>
+        <IconBase iconName={iconName} />
+      </div>
       <h3>{name}</h3>
       <p>{legend}</p>
     </div>
