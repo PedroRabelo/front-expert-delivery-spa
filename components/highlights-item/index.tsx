@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import {
   IconKnife,
   IconMoney,
@@ -6,19 +7,10 @@ import {
   IconTargetLocation,
 } from "../icon-family";
 import Styles from "./styles.module.css";
-
-type Props = {
-  name: string;
-  rating: number;
-  comments: number;
-  food: string;
-  distance: number;
-  price: number;
-  bonus: string;
-  brandUrl: string;
-};
+import { TypePageProps } from "./types";
 
 export const HighlightsItem = ({
+  id,
   name,
   brandUrl,
   rating,
@@ -27,14 +19,23 @@ export const HighlightsItem = ({
   price,
   distance,
   bonus,
-}: Props) => {
+}: TypePageProps) => {
   return (
     <div className={Styles.restaurant}>
-      <div className={Styles.brand}>
-        <Image src={brandUrl} alt={name} width={64} height={64} />
-      </div>
+      <Link href={`/restaurants/${id}`}>
+        <a>
+          <div className={Styles.brand}>
+            <Image src={brandUrl} alt={name} width={64} height={64} />
+          </div>
+        </a>
+      </Link>
+
       <div className={Styles.information}>
-        <h3>{name}</h3>
+        <h3>
+          <Link href={`/restaurants/${id}`}>
+            <a>{name}</a>
+          </Link>
+        </h3>
         <div className="my-3">
           <div>
             <IconStar size={16} color="#FACD5D" />

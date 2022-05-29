@@ -3,6 +3,7 @@ import { IconBase } from "../../components";
 import Link from "next/link";
 
 type Props = {
+  id: string;
   name: string;
   legend: string;
   iconName: string;
@@ -10,13 +11,14 @@ type Props = {
 };
 
 export const Category = ({
+  id,
   name,
   legend,
   iconName,
   backgroundSection,
 }: Props) => {
   return (
-    <Link href="/category">
+    <Link href={`/categories/${id}`}>
       <a className={Styles.card}>
         <div
           className={Styles.icon}

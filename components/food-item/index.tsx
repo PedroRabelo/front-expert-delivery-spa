@@ -1,26 +1,33 @@
 import Image from "next/image";
+import Link from "next/link";
 import { DetailsItem } from "../details-item";
 import Styles from "./styles.module.css";
+import { TypePageProps } from "./types";
 
-type FoodItemProps = {
-  name: string;
-  imageUrl: string;
-  deliveryFee: string;
-  rate: number;
-  reviews: number;
-  category: string;
-  deliveryTime: string;
-};
-
-export const FoodItem = ({ ...props }: FoodItemProps) => {
+export const FoodItem = ({ ...props }: TypePageProps) => {
   return (
     <div>
-      <div className={Styles.thumb}>
-        <Image src={props.imageUrl} alt={props.name} width={336} height={176} />
-      </div>
+      <Link href={`products/${props.id}`}>
+        <a>
+          <div className={Styles.thumb}>
+            <Image
+              src={props.imageUrl}
+              alt={props.name}
+              width={336}
+              height={176}
+              loading="lazy"
+            />
+          </div>
+        </a>
+      </Link>
 
       <div className={Styles.header}>
-        <h3>{props.name}</h3>
+        <h3>
+          <Link href={`/products/${props.id}`}>
+            <a>{props.name}</a>
+          </Link>
+        </h3>
+
         <span>{props.deliveryFee}</span>
       </div>
       <DetailsItem

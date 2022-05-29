@@ -6,6 +6,7 @@ import Styles from "./styles.module.css";
 export const FoodsList = () => {
   const data = [
     {
+      id: "1",
       name: "Gigantic Rodeo Burguer",
       imageUrl: "/foods/burger.jpg",
       deliveryFee: "$ 2.99 Delivery",
@@ -15,6 +16,7 @@ export const FoodsList = () => {
       deliveryTime: "45 - 55 min",
     },
     {
+      id: "2",
       name: "Peperoni Pie",
       imageUrl: "/foods/pizza-peperoni.jpg",
       deliveryFee: "$ 1.99 Delivery",
@@ -24,6 +26,7 @@ export const FoodsList = () => {
       deliveryTime: "45 - 55 min",
     },
     {
+      id: "3",
       name: "Natural Vegetable Rice",
       imageUrl: "/foods/vegan.jpg",
       deliveryFee: "$ 1.99 Delivery",
@@ -33,6 +36,7 @@ export const FoodsList = () => {
       deliveryTime: "45 - 55 min",
     },
     {
+      id: "4",
       name: "Delicious Cheese Pie",
       imageUrl: "/foods/vegan.jpg",
       deliveryFee: "$ 1.99 Delivery",
@@ -42,6 +46,7 @@ export const FoodsList = () => {
       deliveryTime: "45 - 55 min",
     },
     {
+      id: "5",
       name: "Chefs Burger Deluxe",
       imageUrl: "/foods/vegan.jpg",
       deliveryFee: "$ 1.99 Delivery",
@@ -51,6 +56,7 @@ export const FoodsList = () => {
       deliveryTime: "45 - 55 min",
     },
     {
+      id: "6",
       name: "Vegetable Sweeker",
       imageUrl: "/foods/vegan.jpg",
       deliveryFee: "$ 1.99 Delivery",
