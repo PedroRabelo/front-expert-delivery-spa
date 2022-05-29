@@ -1,7 +1,13 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
-import { Categories, Highlights, Navbar, Sidebar } from "../components";
+import {
+  Categories,
+  FoodsList,
+  Highlights,
+  Navbar,
+  Sidebar,
+} from "../components";
 
 const Home: NextPage = () => {
   return (
@@ -18,6 +24,7 @@ const Home: NextPage = () => {
           <Navbar />
           <Categories />
           <Highlights />
+          <FoodsList />
         </div>
       </div>
     </>

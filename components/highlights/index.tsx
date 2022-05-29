@@ -68,7 +68,7 @@ export const Highlights = () => {
   ];
 
   return (
-    <div>
+    <div className="mb-12">
       <div className={Styles.header}>
         <h2>Destaques</h2>
         <Link href="/destaques">
