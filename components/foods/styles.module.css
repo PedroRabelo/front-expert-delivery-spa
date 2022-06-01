@@ -19,3 +19,7 @@
   line-height: 1rem;
   padding: 5px 10px;
 }
+
+.container {
+  @apply flex gap-6 justify-between flex-wrap;
+}

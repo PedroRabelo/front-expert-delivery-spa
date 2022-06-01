@@ -6,7 +6,7 @@ import { TypePageProps } from "./types";
 
 export const FoodItem = ({ ...props }: TypePageProps) => {
   return (
-    <div>
+    <div className={Styles.item}>
       <Link href={`products/${props.id}`}>
         <a>
           <div className={Styles.thumb}>

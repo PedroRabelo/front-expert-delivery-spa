@@ -25,3 +25,9 @@
   padding: 5px 10px;
   border-radius: 4px;
 }
+
+.item {
+  @apply w-full;
+  @apply md:w-2/4;
+  @apply lg:w-1/3;
+}

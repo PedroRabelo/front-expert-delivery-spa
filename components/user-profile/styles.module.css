@@ -3,8 +3,14 @@
   justify-content: space-between;
 }
 
+@media screen(md) {
+  .userDatam .button {
+    @apply flex;
+  }
+}
+
 .userData {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: left;
   flex-direction: column;
@@ -27,7 +33,7 @@
 }
 
 .button {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
 }
