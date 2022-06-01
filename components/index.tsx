@@ -11,3 +11,5 @@ export * from "./user-profile";
 export * from "./foods";
 export * from "./food-item";
 export * from "./details-item";
+export * from "./search";
+export * from "./page-template";

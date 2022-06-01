@@ -4,12 +4,43 @@
   justify-content: space-between;
 }
 
-.inputSearch {
-  background-color: #f7f7f7;
-  outline: none;
-  line-height: 1.5rem;
+.navbar ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar li {
+  display: flex;
+  align-items: center;
+}
+
+.nav a {
+  display: flex;
+  align-items: center;
+}
+
+.nav a svg:first-child {
+  margin-right: 1rem;
+}
+
+.nav a svg:last-child {
+  margin-left: 1rem;
+}
+
+.filterButton,
+.cartButton {
+  width: 48px;
   height: 48px;
   border-radius: 10px;
-  max-width: 385px;
-  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filterButton {
+  background-color: #503e9d;
+}
+
+.cartButton {
+  background-color: #fb6d3a;
 }

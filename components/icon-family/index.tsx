@@ -16,3 +16,8 @@ export * from "./icon-star";
 export * from "./icon-money";
 export * from "./icon-silveware";
 export * from "./icon-target-location";
+export * from "./icon-search";
+export * from "./icon-filter";
+export * from "./icon-shopping-bag";
+export * from "./icon-shopping-cart";
+export * from "./icon-discount";
