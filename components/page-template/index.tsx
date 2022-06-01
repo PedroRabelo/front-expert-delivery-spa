@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import { FilterModal } from "../filter-modal";
 import { Navbar } from "../navbar";
 import { PageHead } from "../page-head";
 import { Sidebar } from "../sidebar";
@@ -19,6 +20,7 @@ export const PageTemplate = ({
   return (
     <>
       <PageHead title={title} description={description} keywords={keywords} />
+      <FilterModal />
       <div className="container m-auto flex">
         <Sidebar />
         <div className="grow p-8">

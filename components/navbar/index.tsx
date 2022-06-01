@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useFilter } from "../../stores";
 import {
   IconArrowTopDown,
   IconDiscount,
@@ -11,6 +12,8 @@ import { SearchInput } from "../search";
 import Styles from "./styles.module.css";
 
 export const Navbar = () => {
+  const { toggleModal } = useFilter((store) => store);
+
   return (
     <div className={Styles.navbar}>
       <ul className={Styles.nav}>
@@ -46,7 +49,7 @@ export const Navbar = () => {
       <SearchInput />
       <ul>
         <li>
-          <button className={Styles.filterButton}>
+          <button className={Styles.filterButton} onClick={() => toggleModal()}>
             <IconFilter size={48} color="#ffffff" />
           </button>
         </li>
