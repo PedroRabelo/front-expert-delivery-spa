@@ -13,8 +13,7 @@ export const FoodItem = ({ ...props }: TypePageProps) => {
             <Image
               src={props.imageUrl}
               alt={props.name}
-              width={336}
-              height={176}
+              layout="fill"
               loading="lazy"
             />
           </div>

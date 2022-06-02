@@ -1,8 +1,5 @@
 .thumb {
-  border-radius: 1rem;
-  overflow: hidden;
-  display: flex;
-  margin-bottom: 1rem;
+  @apply w-full h-48 relative mb-4 overflow-hidden rounded-2xl;
 }
 
 .header {
@@ -28,6 +25,4 @@
 
 .item {
   @apply w-full;
-  @apply md:w-2/4;
-  @apply lg:w-1/3;
 }

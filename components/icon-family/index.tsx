@@ -21,3 +21,4 @@ export * from "./icon-filter";
 export * from "./icon-shopping-bag";
 export * from "./icon-shopping-cart";
 export * from "./icon-discount";
+export * from "./icon-heart";

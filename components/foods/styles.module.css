@@ -21,5 +21,6 @@
 }
 
 .container {
-  @apply flex gap-6 justify-between flex-wrap;
+  @apply grid grid-cols-1  md:grid-cols-3 justify-between flex-wrap;
+  @apply w-full gap-y-6 md:gap-3;
 }

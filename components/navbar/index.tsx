@@ -47,7 +47,7 @@ export const Navbar = () => {
       </ul>
 
       <SearchInput />
-      <ul>
+      <ul className={Styles.navButtons}>
         <li>
           <button className={Styles.filterButton} onClick={() => toggleModal()}>
             <IconFilter size={48} color="#ffffff" />
