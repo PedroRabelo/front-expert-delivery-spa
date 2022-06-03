@@ -1,6 +1,15 @@
 import Head from "next/head";
 import { Highlights, Navbar, PageTemplate, Sidebar } from "../../components";
-import { TypePageProps, TypeParams } from "./types";
+
+export type TypePageProps = {
+  id: string;
+};
+
+export type TypeParams = {
+  params: {
+    id: string;
+  };
+};
 
 function Categories({ id }: TypePageProps) {
   return (

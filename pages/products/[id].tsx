@@ -1,5 +1,23 @@
 import { FoodItem, PageTemplate } from "../../components";
-import { TypePageProps, TypeParams } from "./types";
+
+export type TypePageProps = {
+  product: {
+    id: string;
+    name: string;
+    imageUrl: string;
+    deliveryFee: string;
+    rate: number;
+    reviews: number;
+    category: string;
+    deliveryTime: string;
+  };
+};
+
+export type TypeParams = {
+  params: {
+    id: string;
+  };
+};
 
 function Product({ product }: TypePageProps) {
   return (

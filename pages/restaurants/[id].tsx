@@ -2,7 +2,16 @@ import Image from "next/image";
 import { DetailsItem, FoodsList, PageTemplate } from "../../components";
 import { IconHeart } from "../../components/icon-family";
 import Styles from "./restaurant.module.css";
-import { TypePageProps, TypeParams } from "./types";
+
+export type TypePageProps = {
+  id: string;
+};
+
+export type TypeParams = {
+  params: {
+    id: string;
+  };
+};
 
 function Restaurant({ id }: TypePageProps) {
   return (
