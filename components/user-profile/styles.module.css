@@ -1,6 +1,5 @@
 .userProfile {
-  display: flex;
-  justify-content: space-between;
+  @apply flex justify-between;
 }
 
 .userData {
@@ -32,7 +31,7 @@
   align-items: center;
 }
 
-@media screen(md) {
+@media screen(lg) {
   .button,
   .userData {
     @apply flex;

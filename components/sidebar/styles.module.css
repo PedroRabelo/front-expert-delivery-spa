@@ -1,12 +1,12 @@
 .sidebar {
   max-height: 1024px;
   background-color: #f7f7f7;
-  width: 100%;
+  max-width: 112px;
 
   @apply w-full flex flex-col rounded-3xl;
 }
 
-@media screen(md) {
+@media screen(lg) {
   .sidebar {
     width: 100%;
     max-width: 304px;
@@ -28,12 +28,12 @@
   font-size: 1.125rem;
   line-height: 1.5rem;
   font-weight: 700;
-  @apply hidden md:block;
+  @apply hidden lg:block;
 }
 
 .menu {
   flex-grow: 1;
-  padding: 0 15px;
+  padding: 0 28px;
 }
 
 .menu li {
@@ -48,11 +48,11 @@
 }
 
 .menu svg {
-  @apply md:mr-6;
+  @apply lg:mr-6;
 }
 
 .menu span {
-  @apply hidden md:block;
+  @apply hidden lg:block;
 }
 
 .menu li:hover {
